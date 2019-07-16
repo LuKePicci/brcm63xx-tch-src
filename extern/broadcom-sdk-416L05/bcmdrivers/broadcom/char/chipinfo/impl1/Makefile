@@ -1,9 +1,0 @@
-obj-$(CONFIG_BCM_CHIPINFO) := chipinfo.o 
-
-chipinfo-objs += chipinfo_dep.o
-
-$(obj)/chipinfo_dep.o:
-	cp $(obj)/chipinfo$(BCM_PROFILE).o_save $(obj)/chipinfo_dep.o
-
-applinks:
-
